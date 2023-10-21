@@ -1,0 +1,246 @@
+{
+  "pages": [{
+      "path": "pages/login/login",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+    }, {
+      "path": "pages/user/user",
+      "style": {
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/strategy/strategy",
+      "style": {
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/shopCart/shopCart",
+      "style": {
+        "enablePullDownRefresh": false
+      }
+    }, {
+      "path": "pages/scenery/scenery",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": true
+      }
+    }
+  ],
+  "tabBar": {
+    "list": [{
+        "pagePath": "pages/scenery/scenery",
+        "text": "景点",
+        "iconPath": "/static/assets/scene.png",
+        "selectedIconPath": "/static/assets/scene_selected.png"
+      },
+      {
+        "pagePath": "pages/strategy/strategy",
+        "text": "攻略",
+        "iconPath": "/static/assets/startegy.png",
+        "selectedIconPath": "/static/assets/startegy_selected.png"
+      },
+      {
+        "pagePath": "pages/shopCart/shopCart",
+        "text": "购物车",
+        "iconPath": "/static/assets/cart.png",
+        "selectedIconPath": "/static/assets/cart_selected.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "/static/assets/user.png",
+        "selectedIconPath": "/static/assets/user_selected.png"
+      }
+    ]
+  },
+  //分包加载配置，此配置为小程序的分包加载机制。
+  "subPackages": [{
+    "root": "pages/subPackage", //子包的根目录
+    "pages": [{
+      "path": "myOrder/myOrder",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+    }, {
+      "path": "userInfo/userInfo",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+
+    }, {
+      "path": "article/article",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+
+    }, {
+      "path": "strategyEdit/strategyEdit",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+
+    }, {
+      "path": "billBoard/billBoard",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+    }, {
+      "path": "ticketPayment/ticketPayment",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+
+    }, {
+      "path": "hotelDetail/hotelDetail",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+
+    }, {
+      "path": "ticketList/ticketList",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": true
+      }
+
+    }, {
+      "path": "hotelList/hotelList",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": true
+      }
+
+    }, {
+      "path": "hotelBook/hotelBook",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+
+    }, {
+      "path": "ticketInfo/ticketInfo",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+
+    }, {
+      "path": "driveTour/driveTour",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+
+    }, {
+      "path": "driveTourList/driveTourList",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": true
+      }
+    }, {
+      "path": "roomPayment/roomPayment",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+
+    }, {
+      "path": "paySuccess/paySuccess",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+
+    }, {
+      "path": "setting/setting",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+
+    }]
+  }],
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "^u-(.*)": "@/uni_modules/uview-ui/components/u-$1/u-$1.vue"
+    }
+  },
+  "lazyCodeLoading": "requiredComponents",
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationStyle": "custom",
+    "enablePullDownRefresh": true,
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8",
+    "app-plus": {
+      "background": "#efeff4"
+    },
+    "usingComponents": {
+      "mp-msg": "weui-miniprogram/msg/msg",
+      "van-icon": "/wxcomponents/@vant/weapp/icon/index",
+      "van-nav-bar": "/wxcomponents/@vant/weapp/nav-bar/index",
+      "van-tabs": "/wxcomponents/@vant/weapp/tabs/index",
+      "van-tab": "/wxcomponents/@vant/weapp/tab/index",
+      "van-stepper": "/wxcomponents/@vant/weapp/stepper/index",
+      "van-checkbox": "/wxcomponents/@vant/weapp/checkbox/index",
+      "van-checkbox-group": "/wxcomponents/@vant/weapp/checkbox-group/index",
+      "van-button": "/wxcomponents/@vant/weapp/button/index",
+      "van-swipe-cell": "/wxcomponents/@vant/weapp/swipe-cell/index",
+      "van-grid": "/wxcomponents/@vant/weapp/grid/index",
+      "van-grid-item": "/wxcomponents/@vant/weapp/grid-item/index",
+      "van-search": "/wxcomponents/@vant/weapp/search/index",
+      "van-card": "/wxcomponents/@vant/weapp/card/index",
+      "van-submit-bar": "/wxcomponents/@vant/weapp/submit-bar/index",
+      "van-image": "/wxcomponents/@vant/weapp/image/index",
+      "van-cell": "/wxcomponents/@vant/weapp/cell/index",
+      "van-cell-group": "/wxcomponents/@vant/weapp/cell-group/index",
+      "van-field": "/wxcomponents/@vant/weapp/field/index",
+      "van-dialog": "/wxcomponents/@vant/weapp/dialog/index",
+      "van-sticky": "/wxcomponents/@vant/weapp/sticky/index",
+      "van-tag": "/wxcomponents/@vant/weapp/tag/index",
+      "van-goods-action": "/wxcomponents/@vant/weapp/goods-action/index",
+      "van-goods-action-icon": "/wxcomponents/@vant/weapp/goods-action-icon/index",
+      "van-goods-action-button": "/wxcomponents/@vant/weapp/goods-action-button/index",
+      "van-share-sheet": "/wxcomponents/@vant/weapp/share-sheet/index",
+      "van-popup": "/wxcomponents/@vant/weapp/popup/index",
+      "van-divider": "/wxcomponents/@vant/weapp/divider/index",
+      "van-overlay": "/wxcomponents/@vant/weapp/overlay/index",
+      "van-loading": "/wxcomponents/@vant/weapp/loading/index",
+      "van-uploader": "/wxcomponents/@vant/weapp/uploader/index",
+      "van-dropdown-menu": "/wxcomponents/@vant/weapp/dropdown-menu/index",
+      "van-dropdown-item": "/wxcomponents/@vant/weapp/dropdown-item/index",
+      "van-index-bar": "/wxcomponents/@vant/weapp/index-bar/index",
+      "van-index-anchor": "/wxcomponents/@vant/weapp/index-anchor/index",
+      "van-sidebar": "/wxcomponents/@vant/weapp/sidebar/index",
+      "van-sidebar-item": "/wxcomponents/@vant/weapp/sidebar-item/index",
+      "van-area": "/wxcomponents/@vant/weapp/area/index",
+      "van-notify": "/wxcomponents/@vant/weapp/notify/index",
+      "van-rate": "/wxcomponents/@vant/weapp/rate/index",
+      "van-radio": "/wxcomponents/@vant/weapp/radio/index",
+      "van-radio-group": "/wxcomponents/@vant/weapp/radio-group/index",
+      "van-calendar": "/wxcomponents/@vant/weapp/calendar/index",
+      "van-action-sheet": "/wxcomponents/@vant/weapp/action-sheet/index",
+      "van-transition": "/wxcomponents/@vant/weapp/transition/index",
+      "van-empty": "/wxcomponents/@vant/weapp/empty/index",
+      "van-picker": "/wxcomponents/@vant/weapp/picker/index",
+      "van-steps": "/wxcomponents/@vant/weapp/steps/index",
+      "van-collapse": "/wxcomponents/@vant/weapp/collapse/index",
+      "van-collapse-item": "/wxcomponents/@vant/weapp/collapse-item/index",
+      "van-toast": "/wxcomponents/@vant/weapp/toast/index",
+      "van-skeleton": "/wxcomponents/@vant/weapp/skeleton/index"
+    }
+  }
+}
